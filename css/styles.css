@@ -1,0 +1,13 @@
+body {
+	color: #8b9dc3;
+	background-color: black
+}
+
+.btn {
+  display: block;
+  margin: 10px;
+}
+
+#result {
+  display: none;
+}
