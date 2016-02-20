@@ -2,83 +2,120 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <script src="jss/jquery-1.12.0.js"></script>
     <script src="jss/scripts.js"></script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="all">
+    </link>
     <title>Vacation-website</title>
   </head>
   <body>
-    <div class= "container">
-      <img src="img/vacation.png">
-
-        <h1>Vacation Website Suggester!</h1>
-      </div>
+    <div class= "container-fluid top">
       <div class="jumbotron">
-        <p>Answer the questions below to find your dream vacation!</p>
+        <img src="img/vacation.png">
+        <h1 class="text-center">Vacation Suggester!</h1>
+      </div>
+    </div>
+    <div class="main container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="formBox">
+            <h1> Want a vacation destination?</h1>
 
-          <!--  inputs and questions -->
-        <div id="form">
-          <form id="vacationForm">
-          <div>
-            <label for="gender">What is your gender?</label>
-            <select id="gender">
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-            </select>
-          </div>
-          <div>
-            <label for="attitude">What do you want to do during your vacation?</label>
-            <select id="attitude">
-              <option value="relax">Relax</option>
-              <option value="party">Party</option>
-              <option value="none">None</option>
-            </select>
-          </div>
-          <div>
-            <label for="budget">What is your budget for the vacation?</label>
-            <select id="budget">
-              <option value="under-$5,000">Under-$5,000</option>
-              <option value="above-$5,000">Above-$5,000</option>
-            </select>
-          </div>
-          <div>
-            <label for="activities">What do like to do during your stay ?</label>
-            <select id="activities">
-              <option value="shopping">Shopping</option>
-              <option value="outdoor">Outdoor</option>
-            </select>
+          <form class="survey">
+
+            <h3>What is your present location?</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="us" checked>
+                Are you starting from United States?
+              </label>
+            </div>
+
+            <div>
+              <h3>Are you planning within or outside the Country?</h3>
+              <select class="form-control" id="distance">
+                <option value="either" selected>Anything</option>
+                <option value="yes"> I want to get out!!</option>
+                <option value="no">Something within is nice...</option>>
+              </select>
+            </div>
+
+            <div id="spend">
+              <h3>What is you Budget?</h3>
+              <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR1" checked value=1>
+                      Thrifty ($)
+                  </label>
+
+                  <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR2" value=2>
+                      Comfortable ($$)
+                  </label>
+
+
+                  <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR3" value=3> Treat Yo' Self ($$$)
+                  </label>
+
+
+              </div>
+
+              <div id="season">
+                <h3>When are you Travelling?</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsSeason" id="optionsRadios1" value="summer" checked>
+                      May - September
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsSeason" id="optionsRadios2" value="notSummer">
+                      October - April
+                  </label>
+                </div>
+
+              </div>
+              <div >
+                <h3> Do you like Beach?</h3>
+                <select id="beaches" class="form-control">
+                  <option value="1">No beaches for me please</option>
+                  <option value="2" selected>A little</option>
+                  <option value="3">It would be nice</option>
+                  <option value="4">Very important</option>
+                </select>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="checkSnow">
+                  Are you okay with Cold and Snow?
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
           </div>
         </div>
-              <br><br><br>
-          <button type="submit" class="btn">Your best destination is?!</button>
-          </form>
-      </div>
+        <div class="col-sm-7">
+          <div class="results">
+            <h2>Your next Destination would be...</h2>
+            <div id="resultText">
+              <h1 class="yourResult"></h1>
+              <p class="description"><span= id="aboutDestination"</span><p>
+              <div class="images">
+              </div>
+           </div>
+          </div>
+        </div>
+      </div> <!--end of row-->
 
-          <!--  results -->
-          <div>
-            <h3>The vacation destination for you based on your answers:</h3>
-          <div id="destination1">
-            <h1>Disney Land!</h1>
-            <img src="img/disney.jpg" alt="A picture of Disney Land">
-          </div>
-          <div id="destination2">
-            <h1>kauai!!</h1>
-            <img src="img/kauai.jpg" alt="sunset image at kauai">
-          </div>
-          <div id="destination3">
-            <h1>London!!!</h1>
-            <img src="london.jpg" alt="A photo of london bridge">
-          </div>
-          <div id="error">
-            <h1>Sorry, no destination found. Try again.</h1>
-          </div>
-          </div>
-          <br><br><br>
-    </div>
-          <div class="end">
-            <p class="end-paragrraph"> Have the Best Vacation Ever!!!!</p>
+      <p class="TEST"> </p>
+    
+    </div><!--end main-->
 
-          </div>
   </body>
 </html>
