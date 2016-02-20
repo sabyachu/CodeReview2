@@ -1,33 +1,45 @@
-#destination1, #destination2, #destination3, #error {
-
-  display: none;
+#resultText {
+  diplay: none;
 }
+.top{
+  background-color: #A0522D;
 
-p {
-  font-size: 200%;
 }
-
-h2 {
- color: orange;
- padding: left;
-}
-
-
-h3 {
+.destination{
+  color: purple;
   font-style: italic;
+  font-weight: bold;
+
 }
 
-.container {
-  padding-top: 10px;
-  background-color: yellow;
+.formBox{
+  background-color: #FFEBCD;
+  border-radius: 10px;
+  padding: 15px;
+}
+.results{
+  background-color: #FFFACD;
+  border-radius: 10px;
+  padding: 15px;
+}
+.row{
+   background-color: #1e90ff;
+   border-radius: 5px;
+   padding: 5px: }
+
+
+.description{
+  font-size: 20px;
 }
 
+.images img{
+   display: block;
+   margin:auto;
+   width: 90%;
 
-.form {
-  font-size: 50px;
+
 }
 
-.end {
-  width: 100%;
-  text-align: center;
+body{
+  background-color: #20B2AA;
 }
