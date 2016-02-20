@@ -1,13 +1,33 @@
-body {
-	color: #8b9dc3;
-	background-color: black
-}
+#destination1, #destination2, #destination3, #error {
 
-.btn {
-  display: block;
-  margin: 10px;
-}
-
-#result {
   display: none;
+}
+
+p {
+  font-size: 200%;
+}
+
+h2 {
+ color: orange;
+ padding: left;
+}
+
+
+h3 {
+  font-style: italic;
+}
+
+.container {
+  padding-top: 20px;
+  background-color: blue;
+}
+
+
+.form {
+  font-size: 50px;
+}
+
+.end {
+  width: 100%;
+  text-align: center;
 }
