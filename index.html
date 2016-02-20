@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="jss/jquery-1.12.0.js"></script>
+    <script src="jss/scripts.js"></script>
     <title>Vacation-website</title>
   </head>
   <body>
     <div class= "container">
-      <div class= "jumbotron">
+      <img src="img/vacation.png">
+
         <h1>Vacation Website Suggester!</h1>
       </div>
       <div class="jumbotron">
-        <p>Answer the questions below to find where is your dream vacation located!</p>
+        <p>Answer the questions below to find your dream vacation!</p>
 
           <!--  inputs and questions -->
         <div id="form">
@@ -27,25 +28,18 @@
             </select>
           </div>
           <div>
-            <label for="age">Are you youth or adult?</label>
-            <select id="age">
-              <option value="youth">Youth</option>
-              <option value="adult">Adult</option>
-            </select>
-          </div>
-          <div>
             <label for="attitude">What do you want to do during your vacation?</label>
             <select id="attitude">
               <option value="relax">Relax</option>
               <option value="party">Party</option>
-              <option value="both">Both</option>
+              <option value="none">None</option>
             </select>
           </div>
           <div>
-            <label for="budget">What is your budget for 7-day vacation?</label>
+            <label for="budget">What is your budget for the vacation?</label>
             <select id="budget">
-              <option value="under-$2,000">Under-$2,000</option>
-              <option value="above-$2,000">Above-$2,000</option>
+              <option value="under-$5,000">Under-$5,000</option>
+              <option value="above-$5,000">Above-$5,000</option>
             </select>
           </div>
           <div>
@@ -57,21 +51,19 @@
           </div>
         </div>
               <br><br><br>
-          <button type="submit" class="btn">Your best vacation destination is?!</button>
+          <button type="submit" class="btn">Your best destination is?!</button>
           </form>
       </div>
 
           <!--  results -->
           <div>
-            <h3>The best vacation destination for you based on your answers above is:</h3>
+            <h3>The vacation destination for you based on your answers:</h3>
           <div id="destination1">
             <h1>Disney Land!</h1>
-
             <img src="img/disney.jpg" alt="A picture of Disney Land">
           </div>
           <div id="destination2">
             <h1>kauai!!</h1>
-
             <img src="img/kauai.jpg" alt="sunset image at kauai">
           </div>
           <div id="destination3">
@@ -86,7 +78,7 @@
     </div>
           <div class="end">
             <p class="end-paragrraph"> Have the Best Vacation Ever!!!!</p>
-    
+
           </div>
   </body>
 </html>
