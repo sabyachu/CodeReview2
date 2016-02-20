@@ -71,7 +71,7 @@ $(document).ready(function() {
     $(".images").empty().append('<img class="img-rounded" class="img-responsive" src="img/'+ simpleDest +'.jpg">');
 
     if (simpleDest === "DLH") {
-      $("#aboutDestination").empty().html("Duluth is truly a 'cool' city. Boasting 'Park Point,' the worlds longest freshwater sandbar, it has almost 5 miles of sand beaches.</p>");
+      $("#aboutDestination").empty().html("Duluth is truly a 'cool' city. Boasting 'Park Point,' the worlds longest freshwater sandbar, it has almost 5 miles of sand beaches.");
     } else if (simpleDest === "PRG") {
       $("#aboutDestination").empty().html("Settled farther in the continent, Prague has lots of Classical Music");
     }else if (simpleDest === "MCI") {
